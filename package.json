@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "assertions": "~2.3.0",
-    "macgyver": "~1.6.3",
-    "set": "~1.0.0"
+    "macgyver": "~1.6.3"
   },
   "devDependencies": {
     "tap": "0.3.0"
