@@ -7,10 +7,10 @@
     "url": "git://github.com/dominictarr/event-tree.git"
   },
   "dependencies": {
-    "assertions": "~2.3.0",
-    "macgyver": "~1.6.3"
   },
   "devDependencies": {
+    "assertions": "~2.3.0",
+    "macgyver": "~1.6.3",
     "tap": "0.3.0"
   },
   "scripts": {
