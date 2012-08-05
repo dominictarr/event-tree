@@ -1,7 +1,6 @@
 
 var EventEmitter = require('events').EventEmitter
 var inherits = require('util').inherits
-var Set = require('set')
 
 module.exports = EventTree
 inherits(EventTree, EventEmitter)
