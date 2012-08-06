@@ -48,6 +48,7 @@ EventTree.prototype.remove = function (child) {
   return this
 }
 
+EventTree.prototype.push = 
 EventTree.prototype.add = function (child) {
   if(child.parent && child.parent !== this)
     throw new Error('child already has parent')
@@ -57,4 +58,9 @@ EventTree.prototype.add = function (child) {
   return this
 }
 
+EventTree.prototype.unshift = function (child) {
+  if(!~this.children.indexOf(child))
+    this.children.unshift(child)
+  return this
+}
 
