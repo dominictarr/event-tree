@@ -12,7 +12,6 @@ function EventTree (parent) {
     throw new Error('parent must be EventEmitter or null')
   this.children = []
   this.parent = parent
-  console.log(parent)
   if(!parent) 
     this.root = true
   else if('function' == typeof parent.add)
@@ -59,8 +58,11 @@ EventTree.prototype.add = function (child) {
 }
 
 EventTree.prototype.unshift = function (child) {
-  if(!~this.children.indexOf(child))
+  if(!this.contains(child))
     this.children.unshift(child)
   return this
 }
 
+EventTree.prototype.contains = function (child) {
+  return (!!~this.children.indexOf(child))
+}

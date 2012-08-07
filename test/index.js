@@ -86,8 +86,6 @@ test('track children', function (mac) {
 
   a.equal(et.root, true)
 
-  console.log(et.children)
-
   a.strictEqual(cet.parent, et)
   a.deepEqual(et.children, [cet])
 })
